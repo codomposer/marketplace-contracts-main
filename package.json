@@ -1,0 +1,42 @@
+{
+  "name": "realto-contracts",
+  "version": "1.0.0",
+  "description": "Smart Contracts for Realto and marketplace",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test:eth": "truffle test",
+    "test": "truffle test --config=truffle-config.js --network=$npm_config_network",
+    "compile": "truffle compile --config=truffle-config.js",
+    "migrate": "truffle migrate --config=truffle-config.js --network=$npm_config_network",
+    "migrate:test": "truffle migrate --reset --config=truffle-config.js --network=polygon_infura_testnet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realto-estate/marketplace-contracts.git"
+  },
+  "keywords": [
+    "Matic",
+    "Polygon",
+    "Ethereum",
+    "Truffle",
+    "dapp"
+  ],
+  "author": "Rajat Wasan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/realto-estate/marketplace-contracts/issues"
+  },
+  "homepage": "https://github.com/realto-estate/marketplace-contracts#readme",
+  "devDependencies": {
+    "@maticnetwork/maticjs": "^2.0.40",
+    "@openzeppelin/truffle-upgrades": "^1.12.0",
+    "@truffle/hdwallet-provider": "^1.4.2",
+    "dotenv": "^9.0.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0"
+  }
+}
